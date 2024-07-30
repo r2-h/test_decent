@@ -1,5 +1,4 @@
-// import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom"
 import { ICountry } from "./types"
 
 type Props = {
@@ -8,9 +7,9 @@ type Props = {
 
 export const Country = ({ country }: Props) => {
   return (
-    <button
+    <Link
       className="flex w-full flex-col items-center justify-between gap-1"
-      //   to={`/country/${country.name.common}`}
+      to={`/${country.name.common}`}
     >
       <h3>{country.name.common}</h3>
       <p className="text-xs text-neutral-700">Capital: {country.capital}</p>
@@ -19,6 +18,6 @@ export const Country = ({ country }: Props) => {
         alt={country.flag}
         className="max-h-20 shadow-md"
       />
-    </button>
+    </Link>
   )
 }
