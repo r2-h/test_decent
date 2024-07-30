@@ -16,7 +16,7 @@ export const Country = ({ country }: Props) => {
       <img
         src={country.flags.svg}
         alt={country.flag}
-        className="max-h-20 min-w-20 shadow-md"
+        className="w-feat h-20 min-w-20 shadow-md"
       />
     </Link>
   )
